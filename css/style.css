@@ -1,0 +1,326 @@
+@font-face {
+    font-family: 'milkshakeregular';
+    src: url('milkshake-webfont.woff2') format('woff2'),
+         url('milkshake-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: #000;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+}
+
+h1 a {
+    font-family: 'Milkshake';
+    font-size: 3.2rem;
+    margin-left: 1rem;
+}
+
+h2 {
+    font-family: 'Milkshake';
+}
+
+p,
+.background-3-bottom li,
+main a,
+footer {
+    font-family: 'B612';
+}
+
+svg {
+    width: 2.5rem;
+}
+
+svg rect {
+    color: rgb(245, 231, 203);
+}
+
+.toggle-btn {
+    border: none;
+    background-color: #000;
+    outline: none;
+}
+
+.toggle-btn:hover {
+    cursor: pointer;
+}
+
+a {
+    color: rgb(245, 231, 203);
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+h1 a:hover,
+h1 a:active {
+    text-decoration: none;
+}
+
+nav li {
+    padding: 2rem 0;
+}
+
+nav li a {
+    display: flex;
+}
+
+li a p {
+    margin-top: .4rem;
+}
+
+a svg {
+    margin: 0 1rem;
+}
+
+.line {
+    border-bottom: 1px solid rgb(112, 106, 94);
+    width: 93vw;
+    margin: 0 2%;
+}
+
+button:hover,
+button:active {
+    text-decoration: underline;
+}
+
+.wide-flex button {
+    background-color: #000;
+    color: rgb(245, 231, 203);
+    border: 1px solid rgb(245, 231, 203);
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.wide-flex {
+    background-color: #000;
+    position: absolute;
+    max-height: 0;
+    width: 96.5vw;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.active-nav {
+    max-height: 100vh;
+}
+
+h2 {
+    font-size: 3rem;
+    color: rgb(245, 231, 203);
+}
+
+h3 {
+    color: rgb(198, 85, 44);
+}
+
+.background-1 {
+    background: url(../img/squoosh-typewriter.jpg);
+    background-position: top -25rem left -40rem;
+    padding: 5rem 1rem 0 1rem;
+}
+
+.article-1 {
+    background-color: rgb(217, 159, 61);
+    color: #000;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.article-1 h2 {
+    font-size: 4rem;
+    color: #000;
+}
+
+.line-small {
+    border-bottom: 3px solid rgb(198, 85, 44);
+    width: 2rem;
+    margin: 1.5rem 48%;
+}
+
+.article-2 {
+    padding: 10rem 2rem;
+    color: rgb(245, 231, 203);
+}
+
+.article-2 p {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.article-2 a {
+    padding: 2rem 5rem 2rem 1rem;
+    border-top: 1px solid rgb(245, 231, 203);
+    border-bottom: 1px solid rgb(245, 231, 203);
+}
+
+.background-3-top {
+    background-color: rgb(217, 159, 61);
+    padding: 2rem 2rem 0 2rem;
+}
+
+.header-box {
+    background-color: black;
+    width: 90vw;
+    padding: 2rem 0 1rem 2rem;
+    position: relative;
+    top: 5rem;
+}
+
+.background-3-bottom {
+    background-color: rgb(217, 159, 61);
+    padding: 2rem 0 10rem 4rem;
+    
+}
+
+.article-3-img {
+    height: 48rem;
+    background: url(../img/squoosh-working-from-home.jpg);
+    background-size: 150%;
+    background-position: top left -10rem;
+}
+
+.background-3-bottom ul {
+    margin-bottom: 2rem;
+}
+
+.background-3-bottom li {
+    list-style-type: disc;
+    color: #000;
+    padding-bottom: 1rem;
+}
+
+.background-3-bottom a {
+    color: #000;
+    margin-left: -2rem;
+    padding: 1rem 2rem;
+    border-top: 1px solid rgb(198, 85, 44);
+    border-bottom: 1px solid rgb(198, 85, 44);
+}
+
+footer {
+    color: #fff;
+    padding: 10rem 1rem 3rem 0;
+    text-align: right;
+}
+
+@media only screen and (min-width: 800px){
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
+    }
+
+    .flex-container {
+        width: auto;
+    }
+
+    .toggle-btn {
+        display: none; 
+    }
+
+    .wide-flex {
+        max-height: 5.5rem;
+        position: static;
+        width: 66%;
+        display: flex;
+        justify-content: space-between;
+        flex-grow: .5;
+    }  
+
+    nav ul {
+        display: flex;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .nav-btn button:nth-child(1) {
+        margin: 1rem .5rem 1rem 1rem;
+    }
+
+    .nav-btn button:nth-child(2) {
+        margin: 1rem 1rem 1rem .5rem;
+    }
+
+    .background-1 {
+        background-repeat: no-repeat;
+        background-position: top -27rem left;
+    }
+
+    .article-1 {
+        width: 40rem;
+        position: relative;
+        bottom: -10rem;
+        left: 18rem;
+    }
+
+    .article-2 {
+        position: relative;
+        left: 50%;
+        width: 50%;
+    }
+
+    .header-box {
+        width: 48rem;
+        position: relative;
+        left: 12rem;
+    }
+
+    .article-3-flex {
+        display: flex;
+        flex-flow: wrap;
+        background-color: rgb(217, 159, 61);
+    }
+
+    .article-3-img {
+        width: 37vw;
+        height: 50rem;
+        background-size: 100%;
+        background-position: top left;
+        background-repeat: no-repeat;
+        margin-left: 5rem;
+    }
+
+    .background-3-bottom {
+        margin: 5rem 0 0 5rem;
+        padding-bottom: 0;
+    }
+
+
+
+}/* End @media 800px */
+
+@media only screen and (min-width: 1000px){
+    .wide-flex {
+        flex-grow: 0;
+    }
+}/* End @media 1000px */
+
+@media only screen and (min-width: 1299px){
+    body {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+}/* End @media 1299px */
+
